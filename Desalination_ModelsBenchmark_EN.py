@@ -79,6 +79,7 @@ evaluator_rmse = RegressionEvaluator(labelCol="Pressure Drop (bar)", predictionC
 evaluator_r2 = RegressionEvaluator(labelCol="Pressure Drop (bar)", predictionCol="prediction", metricName="r2")
 
 import time
+model_save_path = "dbfs:/FileStore/output/models/desalination_models/"
 
 # -------------------- Model 1: Linear Regression -------------------- #
 print("==> Training Linear Regression")
@@ -96,7 +97,7 @@ lr_r2 = evaluator_r2.evaluate(lr_predictions)
 
 print(f"Linear Regression - Root Mean Squared Error (RMSE): {lr_rmse}")
 print(f"Linear Regression - R^2 Score: {lr_r2}")
-
+lr_model.save(f"{model_save_path}/linear_regression_model")
 
 # -------------------- Model 2: Random Forest Regressor -------------------- #
 print("\n==> Training Random Forest Regressor")
@@ -114,7 +115,7 @@ rf_r2 = evaluator_r2.evaluate(rf_predictions)
 
 print(f"Random Forest - Root Mean Squared Error (RMSE): {rf_rmse}")
 print(f"Random Forest - R^2 Score: {rf_r2}")
-
+rf_model.save(f"{model_save_path}/random_forest_model")
 
 # -------------------- Model 3: Gradient Boosting Regressor -------------------- #
 print("\n==> Training Gradient Boosting Regressor")
@@ -132,6 +133,7 @@ gbt_r2 = evaluator_r2.evaluate(gbt_predictions)
 
 print(f"Gradient Boosting - Root Mean Squared Error (RMSE): {gbt_rmse}")
 print(f"Gradient Boosting - R^2 Score: {gbt_r2}")
+gbt_model.save(f"{model_save_path}/gradient_boosting_model")
 
 # -------------------- Training Time Comparison -------------------- #
 print("\n==> Training Time Comparison")
