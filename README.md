@@ -12,8 +12,8 @@ The repository includes two main notebooks:
 ## Dataset
 A mock dataset was generated based on insights from the following research articles:
 
-- [Low energy consumption in the Perth seawater desalination plant] (https://www.researchgate.net/publication/228491362_Low_energy_consumption_in_the_Perth_seawater_desalination_plant)
-- [Membranes for SWRO Desalination] (https://www.mdpi.com/2077-0375/11/10/774)
+- [Low energy consumption in the Perth seawater desalination plant](https://www.researchgate.net/publication/228491362_Low_energy_consumption_in_the_Perth_seawater_desalination_plant)
+- [Membranes for SWRO Desalination](https://www.mdpi.com/2077-0375/11/10/774)
 This dataset simulates operational conditions for a desalination plant, including factors like flow rates, salinity, temperature, and energy consumption.
 
 ## Models Compared
