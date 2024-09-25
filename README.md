@@ -1,6 +1,6 @@
 # Desalination Plant Machine Learning Models Benchmark with Apache Spark ML in DataBricks
 This repository contains a comparison of three machine learning models (Linear Regression, Random Forest, and Gradient Boosting) applied to simulated desalination plant data. The goal is to predict the pressure drop in the reverse osmosis process based on various operational parameters using apache spark in Databricks.
-![SparkMLBenchmark.png](SparkMLBenchmark.png)
+![SparkMLBenchmark.png]()
 
 
 ## Project Overview
