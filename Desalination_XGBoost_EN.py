@@ -74,10 +74,13 @@ df = assembler.transform(df)
 # Split the data into training (80%) and testing (20%)
 train_data, test_data = df.randomSplit([0.8, 0.2], seed=42)
 
+model_save_path = "dbfs:/FileStore/output/models/desalination_models/"
+
 # -------------------- Gradient Boosting Regressor -------------------- #
 print("==> Training Gradient Boosting Regressor")
 gbt = GBTRegressor(featuresCol="features", labelCol="Pressure Drop (bar)", maxIter=100)
 gbt_model = gbt.fit(train_data)
+gbt_model.save(f"{model_save_path}/gradient_boosting_model_sensitivity")
 
 # Predictions and Evaluation
 gbt_predictions = gbt_model.transform(test_data)
