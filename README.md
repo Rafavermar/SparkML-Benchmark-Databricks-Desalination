@@ -6,7 +6,7 @@ The need for clean water is increasing, and desalination plays a key role in add
 
 The repository includes two main notebooks:
 
-- Desalination_ModelsBenchmar: A comparison of Linear Regression, Random Forest, and Gradient Boosting models.
+- Desalination_ModelsBenchmark: A comparison of Linear Regression, Random Forest, and Gradient Boosting models.
 - Desalination_XGBoost: A detailed exploration of the XGBoost model, including sensitivity analysis and energy/cost calculations.
   
 ## Dataset
