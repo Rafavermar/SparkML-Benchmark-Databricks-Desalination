@@ -31,9 +31,10 @@ The notebooks showcase the training times, RMSE (Root Mean Squared Error), and R
 ## How to Run
 1. Clone the repository:
 
-'''
+```
 git clone https://github.com/your-username/desalination-ml-benchmark.git
-cd desalination-ml-benchmark '''
+cd desalination-ml-benchmark
+```
 
 2. Upload the notebooks to Databricks or any PySpark-enabled environment.
 
